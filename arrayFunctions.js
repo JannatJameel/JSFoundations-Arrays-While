@@ -62,9 +62,8 @@ function eliminateTeam(teams) {
  * secondHalfOfArrayIfItIsEven(["apple", "orange", "banana", "kiwi", "blueberry"]) -> []
  */
 function secondHalfOfArrayIfItIsEven(fruits) {
-  while (fuits.length % 2 === 0){
-    return fruits.slice(0,fruits.length/2);
-  }
+  if (fruits.length % 2) return [];
+  else return fruits.slice(fruits.length/2);
 }
 
 /**
@@ -83,7 +82,7 @@ function secondHalfOfArrayIfItIsEven(fruits) {
  */
 function youGottaCalmDown(shout) {
   while (shout.endsWith("!!")){
-    shout = shout.slice(0,shout.length-1);
+    shout = shout.slice(0,-1);
   }
   return shout;
 }
