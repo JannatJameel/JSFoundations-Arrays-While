@@ -9,8 +9,7 @@
  * isArrayLengthOdd([1, 2, 3, 4]) -> flase
  */
 function isArrayLengthOdd(numbers) {
-  length = numbers.length;
-  return length % 2 !== 0;
+  return numbers.length % 2 !== 0;
 }
 
 /**
@@ -24,8 +23,7 @@ function isArrayLengthOdd(numbers) {
  * isArrayLengthEven([1, 2, 3, 4]) -> true
  */
 function isArrayLengthEven(numbers) {
-  length = numbers.length;
-  return length % 2 === 0;
+  return numbers.length % 2 === 0;
 }
 
 /**
@@ -64,9 +62,8 @@ function eliminateTeam(teams) {
  * secondHalfOfArrayIfItIsEven(["apple", "orange", "banana", "kiwi", "blueberry"]) -> []
  */
 function secondHalfOfArrayIfItIsEven(fruits) {
-  length = fruits.length;
-  while (length % 2 === 0){
-    return fruits.slice(length/2);
+  while (fuits.length % 2 === 0){
+    return fruits.slice(0,fruits.length/2);
   }
 }
 
